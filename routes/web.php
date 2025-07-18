@@ -7,7 +7,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
-    return redirect()->route('register');
+    return view('welcome');
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
